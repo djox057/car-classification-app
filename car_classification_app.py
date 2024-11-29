@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 
 # Load the pre-trained model and encoder
-model = joblib.load(r"C:\Users\Korisnik\Desktop\car_score_project\notebooks\gradient_boosting_model_tuned.pkl")
-encoder = joblib.load(r"C:\Users\Korisnik\Desktop\car_score_project\notebooks\one_hot_encoder.pkl")
+model = joblib.load("gradient_boosting_model_tuned.pkl")
+encoder = joblib.load("one_hot_encoder.pkl")
 
 # Define valid input options
 valid_buying = ['low', 'med', 'high', 'vhigh']
